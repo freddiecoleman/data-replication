@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "lib": ["es2018"],
+        "target": "ES2018",
+        "module": "commonjs",
+        "outDir": "./dist",
+        "strict": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "typeRoots": ["./node_modules/@types"],
+        "types": ["jasmine", "node"]
+    },
+    "include": ["./"],
+    "exclude": ["./node_modules"]
+}

@@ -1,2 +1,1 @@
-# data-replication
-Data replication in TypeScript
+# Data replication in TypeScript
