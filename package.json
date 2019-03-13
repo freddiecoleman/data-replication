@@ -4,7 +4,9 @@
   "description": "Data replication in TypeScript",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "npm run build; npm run test:unit",
+    "test:unit": "jasmine 'dist/test/unit/**/*.spec.js'"
   },
   "repository": {
     "type": "git",
