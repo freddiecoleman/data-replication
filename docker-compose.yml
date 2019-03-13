@@ -1,0 +1,69 @@
+version: '3'
+services:
+  peer1:
+    build: .
+    container_name: peer1
+    hostname: peer1
+    command: ash -c "npm install && nodemon --delay 2.5 index.js --peerNumber 1"
+    ports:
+     - "8080:8080"
+     - "9090:9090"
+    working_dir: /app
+    volumes:
+      - ".:/app"
+    networks:
+      main:
+  peer2:
+    build: .
+    container_name: peer2
+    hostname: peer2
+    command: ash -c "npm install && nodemon --delay 2.5 index.js --peerNumber 2"
+    ports:
+     - "8081:8081"
+     - "9091:9091"
+    working_dir: /app
+    volumes:
+      - ".:/app"
+    networks:
+      main:
+  peer3:
+    build: .
+    container_name: peer3
+    hostname: peer3
+    command: ash -c "npm install && nodemon --delay 2.5 index.js --peerNumber 3"
+    ports:
+     - "8082:8082"
+     - "9092:9092"
+    working_dir: /app
+    volumes:
+      - ".:/app"
+    networks:
+      main:
+  peer4:
+    build: .
+    container_name: peer4
+    hostname: peer4
+    command: ash -c "npm install && nodemon --delay 2.5 index.js --peerNumber 4"
+    ports:
+     - "8083:8083"
+     - "9093:9093"
+    working_dir: /app
+    volumes:
+      - ".:/app"
+    networks:
+      main:
+  peer5:
+    build: .
+    container_name: peer5
+    hostname: peer5
+    command: ash -c "npm install && nodemon --delay 2.5 index.js --peerNumber 5"
+    ports:
+     - "8084:8084"
+     - "9094:9094"
+    working_dir: /app
+    volumes:
+      - ".:/app"
+    networks:
+      main:
+networks:
+  main:
