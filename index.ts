@@ -178,8 +178,8 @@ eventEmitter.on('message:rumor', rumorMessageHandler);
 eventEmitter.on('message:status', statusMessageHandler);
 eventEmitter.on('message:invalid', err => log.error(err));
 
-udpServer.start(local, eventEmitter);
-httpServer.start(local, eventEmitter);
+udpServer.start(localState, eventEmitter);
+httpServer.start(localState, eventEmitter);
 
 setInterval(antiEntropy, localState.antiEntropyInterval);
 setInterval(logData, localState.logInterval);
