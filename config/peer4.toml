@@ -1,0 +1,25 @@
+[local]
+name = "rook"
+port = 9093
+httpServerPort = 8083
+logInterval = 2500
+ackTimeout = 1000
+antiEntropyInterval = 10000
+
+[peers]
+
+  [peers.queen]
+  hostname = "peer1"
+  port = 9090
+
+  [peers.bishop]
+  hostname = "peer2"
+  port = 9091
+
+  [peers.knight]
+  hostname = "peer3"
+  port = 9092
+
+  [peers.pawn]
+  hostname = "peer5"
+  port = 9094

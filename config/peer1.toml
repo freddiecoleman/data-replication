@@ -1,0 +1,25 @@
+[local]
+name = "queen"
+port = 9090
+httpServerPort = 8080
+logInterval = 2500
+ackTimeout = 1000
+antiEntropyInterval = 10000
+
+[peers]
+
+  [peers.bishop]
+  hostname = "peer2"
+  port = 9091
+
+  [peers.knight]
+  hostname = "peer3"
+  port = 9092
+
+  [peers.rook]
+  hostname = "peer4"
+  port = 9093
+
+  [peers.pawn]
+  hostname = "peer5"
+  port = 9094
